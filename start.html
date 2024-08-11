@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url(background.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+    <title>Desafio Matemático</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Desafio Matemático</h1>
+        <p>Responda as equações matemáticas seguindo a regra dos sinais!</p>
+        <p>Sua pontuação será </p>
+        <div id="startgame-container">
+        <button  onclick="startgame()">Iniciar</button>
+        </div>
+    </div>
+    <script>
+        function startgame() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

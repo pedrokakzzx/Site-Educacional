@@ -1,0 +1,108 @@
+/* Remover setas do campo de número para todos os navegadores */
+input[type="number"] {
+    -moz-appearance: textfield; /* Para Firefox */
+    appearance: textfield; /* Para outros navegadores */
+}
+
+/* Adicionalmente, remove o espaçamento e a borda do campo em alguns navegadores */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url(background.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+#game-info {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#answer {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 300px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#game-info {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#high-score {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #d9534f;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    #answer {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Matemático</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desafio Matemático</h1>
+        <div id="game-info">
+            <p>Pontuação: <span id="score">0</span></p>
+            <p>Vidas: <span id="lives">5</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+        <div id="question-container">
+            <p id="question">Resolva a conta abaixo:</p>
+            <input type="number" id="answer" placeholder="Sua resposta">
+            <button onclick="checkAnswer()">Enviar</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
